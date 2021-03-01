@@ -1,0 +1,24 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+</HEAD> 
+<script>
+function fromatoa2() {
+        var a=parseFloat(document.getElementById('s').value);
+        var a2; 
+        a2 = a * a;
+        document.getElementById("sqr").value = a2;
+        }    
+</script>
+<BODY bgcolor="lightgreen">
+    <h3>Вычисление площади</h3>
+    <h5>Уйдите с поля 'Сторона'</h5>
+    <form method="POST">
+        <p>Сторона:</p>
+		    <input type=text name="side" id="s" value="0" onblur = "fromatoa2()">
+	<br>
+		<p>Площадь:</p>
+			<input type=text name="square" id="sqr" value="0">
+    </form>
+</BODY>
+</HTML>

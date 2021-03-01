@@ -1,0 +1,3 @@
+:- dynamic losers/3.
+
+

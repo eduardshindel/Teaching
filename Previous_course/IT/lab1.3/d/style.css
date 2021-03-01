@@ -1,0 +1,13 @@
+<style>
+	body {}
+	.day {
+		font-size: 24pt;
+		margin-left: 5em;
+		font-weight: bold;
+		font-style: italic;
+	}
+	.sub {
+		font-size: 15pt;
+		margin-left: 10px;
+	}
+</style>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.1</TITLE>
+</HEAD> 
+<BODY>
+<script language="JavaScript">
+var arr = new Array();
+var num = 1, speed = 50, click = 1;
+var time;
+
+arr[0] = "s/s1.gif";
+arr[1] = "s/s2.gif";
+arr[2] = "s/s3.gif";
+arr[3] = "s/s4.gif";
+arr[4] = "s/s5.gif";
+arr[5] = "s/s6.gif";
+arr[6] = "s/s7.gif";
+arr[7] = "s/s8.gif";
+arr[8] = "s/s9.gif";
+arr[9] = "s/s10.gif";
+arr[10] = "s/s11.gif";
+arr[11] = "s/s12.gif";
+
+function animate()
+{
+	document.animation.src = arr[num];
+
+	if (num < 11) {
+		num++;
+	} else {
+		num = 0;
+	}
+}
+
+function santa_run()
+{
+	time = setTimeout(animate, speed);
+}
+
+function start()
+{
+	if (click == 0) santa_run();
+	if (click == 0) click = 1;
+}
+
+function stop()
+{
+	clearTimeout(time);
+	click = 0;
+}
+
+function fast()
+{
+	if (speed > 0) speed -= 10;
+}
+
+function slow()
+{
+	if (speed < 200) speed += 10;
+}
+
+</script>
+	<img name="animation" src="s/s1.gif" onLoad="santa_run()"><br>
+	<img src="button/start.gif" width="192" onClick="start()">
+	<img src="button/stop.gif" width="192" onClick="stop()"><br>
+	<img src="button/fast.gif" width="192" onClick="fast()">
+	<img src="button/slow.gif" width="192" onClick="slow()">
+</BODY>
+</HTML>
+

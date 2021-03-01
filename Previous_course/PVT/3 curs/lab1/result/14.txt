@@ -1,0 +1,346 @@
+--nodes=1 --ntasks-per-node=8
+1 process - 0.008112
+
+2 process - 0.008116
+
+3 process - 0.005259
+
+0 process - 0.008125
+
+rank 0 feedback = 0.008149
+4 process - 0.000255
+
+5 process - 0.008132
+
+6 process - 0.006202
+
+7 process - 0.008149
+--nodes=2 --ntasks-per-node=8
+1 process - 0.054456
+
+3 process - 0.057038
+
+2 process - 0.054416
+
+5 process - 0.079137
+
+9 process - 0.109146
+
+11 process - 0.109148
+
+13 process - 0.109166
+
+10 process - 0.109154
+
+12 process - 0.109155
+
+4 process - 0.069978
+
+14 process - 0.109172
+
+6 process - 0.077942
+
+15 process - 0.110253
+
+7 process - 0.092286
+
+8 process - 0.109143
+
+0 process - 0.039343
+
+rank 0 feedback = 0.110253
+--nodes=3 --ntasks-per-node=8
+1 process - 0.069563
+
+3 process - 0.103861
+
+2 process - 0.085232
+
+5 process - 0.121375
+
+6 process - 0.128656
+
+7 process - 0.136737
+
+9 process - 0.150842
+
+4 process - 0.111068
+
+10 process - 0.150827
+
+11 process - 0.151145
+
+13 process - 0.170712
+
+17 process - 0.153977
+
+19 process - 0.153122
+
+18 process - 0.153947
+
+21 process - 0.154793
+
+22 process - 0.154809
+
+0 process - 0.058330      
+
+12 process - 0.160954     
+
+23 process - 0.154826     
+
+14 process - 0.170768     
+
+16 process - 0.153938     
+
+rank 0 feedback = 0.176920
+15 process - 0.176920     
+
+20 process - 0.153183 
+
+8 process - 0.150822
+--nodes=4 --ntasks-per-node=8
+1 process - 0.110802
+
+2 process - 0.116122
+
+3 process - 0.138798
+
+5 process - 0.138826
+
+7 process - 0.151008
+
+4 process - 0.138824
+
+6 process - 0.151015
+
+9 process - 0.171113
+
+11 process - 0.180110
+
+10 process - 0.180048
+
+13 process - 0.195256
+
+15 process - 0.221057
+
+8 process - 0.171048
+
+17 process - 0.238479
+
+12 process - 0.192277
+
+18 process - 0.238472
+
+14 process - 0.207742
+
+19 process - 0.238498
+
+21 process - 0.242147
+
+20 process - 0.239168
+
+0 process - 0.095568
+
+22 process - 0.250037
+
+25 process - 0.260265
+
+23 process - 0.256897
+
+26 process - 0.260265
+
+16 process - 0.238469
+
+27 process - 0.260272
+
+29 process - 0.260286
+
+31 process - 0.260293
+
+rank 0 feedback = 0.260293
+24 process - 0.260260
+
+28 process - 0.260275
+
+30 process - 0.260276
+--nodes=5 --ntasks-per-node=8
+1 process - 0.132084
+
+3 process - 0.159720
+
+2 process - 0.147848
+
+5 process - 0.173191
+
+4 process - 0.159714
+
+6 process - 0.175381
+
+7 process - 0.186868
+
+9 process - 0.204923
+
+10 process - 0.210598
+
+11 process - 0.218201
+
+13 process - 0.235511
+
+14 process - 0.241522
+
+15 process - 0.254532
+
+8 process - 0.193904
+
+12 process - 0.228655
+
+17 process - 0.266089
+
+18 process - 0.277220
+
+19 process - 0.286449
+
+20 process - 0.296253
+
+25 process - 0.323204
+
+21 process - 0.323354
+
+22 process - 0.323367
+
+23 process - 0.323374
+
+26 process - 0.323238
+
+27 process - 0.323637
+
+29 process - 0.323650
+
+31 process - 0.331146
+
+24 process - 0.323218
+
+16 process - 0.263735
+
+0 process - 0.119413
+
+rank 0 feedback = 0.331146
+28 process - 0.323648
+
+33 process - 0.294183
+
+30 process - 0.331128
+
+34 process - 0.295037
+
+35 process - 0.295018
+
+36 process - 0.295047
+
+37 process - 0.295025
+
+38 process - 0.295028
+
+39 process - 0.294246
+
+32 process - 0.294996
+--nodes=6 --ntasks-per-node=8
+1 process - 0.154487
+
+2 process - 0.175933
+
+3 process - 0.186372
+
+5 process - 0.201257
+
+6 process - 0.211198
+
+7 process - 0.225694
+
+4 process - 0.193399
+
+9 process - 0.242758
+
+10 process - 0.242770
+
+11 process - 0.250653
+
+13 process - 0.283256
+
+14 process - 0.290027
+
+15 process - 0.315394
+
+8 process - 0.229631
+
+12 process - 0.270025
+
+17 process - 0.297192
+
+18 process - 0.297177
+
+19 process - 0.296453
+
+21 process - 0.319313
+
+20 process - 0.312796
+
+22 process - 0.322032
+
+23 process - 0.333066
+
+25 process - 0.342738
+
+25 process - 0.342738
+
+26 process - 0.342751
+
+27 process - 0.342755
+
+29 process - 0.351325
+
+30 process - 0.366043
+
+33 process - 0.354633
+
+16 process - 0.297186
+
+31 process - 0.366050
+
+24 process - 0.342730
+
+28 process - 0.343861
+
+35 process - 0.369968
+
+34 process - 0.357951
+
+37 process - 0.373623
+
+41 process - 0.415485
+
+42 process - 0.415475
+
+43 process - 0.415494
+
+45 process - 0.415493
+
+44 process - 0.415497
+
+38 process - 0.384127
+
+46 process - 0.415499
+
+39 process - 0.392069
+
+47 process - 0.417860
+
+36 process - 0.373589
+
+40 process - 0.415472
+
+32 process - 0.354628
+
+0 process - 0.149899
+
+rank 0 feedback = 0.417860

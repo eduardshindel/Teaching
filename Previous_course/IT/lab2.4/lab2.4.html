@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.4</TITLE>
+</HEAD> 
+<script>
+    var arr = new Array();
+    var i;
+
+    for (i = 0; i < 10; i++) {
+        arr[i] = "dg/dg" + i + ".gif"
+    }
+
+    function get_hour() {
+        var today = new Date();
+        var hour = today.getHours();
+        if (hour > 12) {
+            document.sun.src = "dg/dgpm.gif"; 
+            hour = hour - 12;
+        }
+        if (hour > 9) {
+            document.hour1.src = arr[1];
+            fir = Math.floor(hour % 10);
+            document.hour2.src = arr[fir];
+        } else {
+            document.hour2.src = arr[hour];
+        }
+    }
+
+    function get_seconds() {
+        var today = new Date();
+        var seconds = today.getSeconds();
+        fir = Math.floor(seconds / 10);
+        sec = Math.floor(seconds % 10);
+        document.seconds1.src = arr[fir];
+        document.seconds2.src = arr[sec];
+    }
+
+    function get_minute() {
+        var today = new Date();
+        var minute = today.getMinutes();
+        fir = Math.floor(minute / 10);
+        sec = Math.floor(minute % 10);
+        document.minute1.src = arr[fir];
+        document.minute2.src = arr[sec];
+    }
+
+    function get_day() {
+        var today = new Date();
+        var day = today.getDate();
+        fir = Math.floor(day / 10);
+        sec = Math.floor(day % 10);
+        document.day1.src = arr[fir];
+        document.day2.src = arr[sec];
+    }
+
+    function get_month() {
+        var today = new Date();
+        var month = today.getMonth() + 1;
+        fir = Math.floor(month / 10);
+        sec = Math.floor(month % 10);
+        document.month1.src = arr[fir];
+        document.month2.src = arr[sec];
+    }
+
+    function get_year() {
+        var today = new Date();
+        var year = today.getFullYear();
+        fir = Math.floor(year / 1000);
+        sec = Math.floor((year % 1000) / 100);
+        th = Math.floor((year % 100) / 10);
+        f = Math.floor(year % 10);
+        document.year1.src = arr[fir];
+        document.year2.src = arr[sec];
+        document.year3.src = arr[th];
+        document.year4.src = arr[f];
+    
+    }
+</script>
+<BODY bgcolor="black">
+    <img name="hour1" src="dg/dgnull.gif">
+    <img name="hour2" src="dg/dg0.gif" onload="get_hour()">
+    <img src="dg/dgc.gif">
+    <img name="minute1" src="dg/dg0.gif">
+    <img name="minute2" src="dg/dg0.gif" onload="get_minute()">
+    <img src="dg/dgc.gif">
+    <img name="seconds1" src="dg/dg0.gif">
+    <img name="seconds2" src="dg/dg0.gif" onload="get_seconds()">
+    <img name="sun" src="dg/dgam.gif"><br>
+    <img name="day1" src="dg/dg0.gif">
+    <img name="day2" src="dg/dg0.gif" onload="get_day()">
+    <img src="dg/dgp.gif">
+    <img name="month1" src="dg/dg0.gif">
+    <img name="month2" src="dg/dg0.gif" onload="get_month()">
+    <img src="dg/dgp.gif">
+    <img name="year1" src="dg/dg0.gif">
+    <img name="year2" src="dg/dg0.gif">
+    <img name="year3" src="dg/dg0.gif">
+    <img name="year4" src="dg/dg0.gif" onload="get_year()">
+</BODY>
+</HTML>

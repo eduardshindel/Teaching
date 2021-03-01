@@ -1,0 +1,40 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.2</TITLE>
+</HEAD> 
+<style>
+	img {cursor:hand;}
+	div {cursor:hand; position:absolute;}
+</style>
+<script language="JavaScript">
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+	
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+		
+	function drop(ev) {
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+</script>
+
+	<body bgcolor="lightblue">
+		<H1 align=center>Собери мозаику!</H1>
+		<h3>Перемещая картинки мышкой, нужно собрать рисунок.</h3>
+		<img id="puzzle1" src="r/r1.gif" dragenabled ondragstart="drag(event)">
+		<img id="puzzle2" src="r/r2.gif" dragenabled ondragstart="drag(event)"><br>
+		<img id="puzzle3" src="r/r3.gif" dragenabled ondragstart="drag(event)">
+		<img id="puzzle4" src="r/r4.gif" dragenabled ondragstart="drag(event)">
+
+		<div style= "top:110px; left:300px; border:2px solid blue; width:90; height:160;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div style= "top:110px; left:400px; border:2px solid blue; width:90; height:160;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div style= "top:290px; left:300px; border:2px solid blue; width:90; height:160;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div style= "top:290px; left:400px; border:2px solid blue; width:90; height:160;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</body>
+</html> 
+
